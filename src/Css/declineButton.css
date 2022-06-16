@@ -1,0 +1,13 @@
+.deny{
+    border: solid #C1C1C1 1px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 2px;
+    color: #EFEFEF;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    font-family: Arial;
+    cursor: pointer;
+}

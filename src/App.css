@@ -1,38 +1,233 @@
-.App {
-  text-align: center;
+html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #EEEEEE;
+}
+/*header */
+.header{
+  display: flex;
+  position:fixed ;
+  top: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+  width: 100vw;
+  background-color: #000000;
+
+}
+
+.logo{
+  display: block;
+  height: 40px;
+  width: 160px;
+  margin-left: 25px;
+}
+.userName{
+  color: #FAFAFA;
+  font-size: 20px;
+  margin-right: 40px;
+  float: right;
+  font-family: 'Arial';
+  font-weight: lighter;
+}
+
+/*image*/
+.mainImage{
+  width: 100%;
+  height: 150px;
+}
+
+.outLayer{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin-top: 90px;
+  background-color:#FFFFFF ;
+  overflow: auto;
+  /*margin-top: 20px;*/
+
+}
+
+.innerLayer{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+}
+.innerLayer > *{
+  flex-basis: 100%;
+}
+
+/*Job Title */
+.jobNameArea{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /*width: 100vw;*/
+  /*margin-top: 15px;*/
+  margin-left: 10%;
+}
+
+.jobTtile{
+  font-size: 17px;
+  font-family: 'Arial';
+  font-weight:900;
+}
+
+.companyName{
+  font-size: 17px;
+  font-family: 'Arial';
+  margin-top: 5px;
+}
+
+/*Distance and Hourly Rate*/
+.distanceArea{
+  background-color: #6AD2AD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.distance{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.hourlyRate{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+}
+.distanceTitle{
+  font-size: 12px;
+  font-weight: bold;
+}
+.hourlyRateTitle{
+  font-size: 12px;
+  font-weight: bold;
+}
+.distanceMiles{
+  font-size: 25px;
+  color: #FFFFFF;
+  font-family:"Arial Black";
+}
+
+.hourlyRateSalary{
+  font-size: 25px;
+  color: #FFFFFF;
+  font-family:"Arial Black";
+}
+
+/*Shift Dates*/
+.shiftDateArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.innerArea{
+  display: flex;
+  align-items: center;
+}
+.shiftDate{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.itemIcon{
+  height: 30px;
+  width: 30px;
+  margin-left: 10%;
+}
+
+.infoTitle{
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.shiftDateItem{
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: lighter;
+  font-family: Arial;
+}
+.smallItem{
+  font-size: 10px;
+  line-height: 25px;
+  font-weight: lighter;
+  font-family: Arial;
+}
+/*Location*/
+.locationArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.location{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.line{
+  width: 80%;
+  height: 1px;
+  border-top: solid #EFEFEF 1px;
+  margin-left: 10%;
+}
+/*Requirement*/
+.requirementsArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.requirements{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.requirementsItem{
+  display: flex;
+  flex-direction: column;
+}
+/*Report TO*/
+.reportToArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.reportTo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+/*Button*/
+.buttonGroup{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
