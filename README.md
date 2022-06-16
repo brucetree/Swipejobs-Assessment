@@ -1,7 +1,6 @@
 # Environment
-1. Use ```cd my-app``` to get into my-app dictionary
-2. Use ```npm install --save moment react-moment``` to install Moment
-3. Use ```yarn start``` to start the web application in local environment
+1. Use ```npm install --save moment react-moment``` to install Moment
+2. Use ```yarn start``` to start the web application in local environment
 
 # Feature of the Web Application
 1. Use React Hooks to get control the data
