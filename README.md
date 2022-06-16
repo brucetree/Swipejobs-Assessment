@@ -1,6 +1,6 @@
 # Environment
-1. Use ```npm install --save moment react-moment``` to install Moment
-2. Use```yarn install``` to install yarn
+1. Use```yarn install``` to install yarn
+2. Use ```npm install --save moment react-moment``` to install Moment
 3. Use ```yarn start``` to start the web application in local environment
 
 # Feature of the Web Application
